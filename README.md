@@ -3,6 +3,8 @@
 # Keith
 A CSS Library inspired by duck-related colours.
 
+Made with HTML, CSS, JS and Prism.js.
+
 ## Colour Palette
 ![Colour palette](image.png)
 
