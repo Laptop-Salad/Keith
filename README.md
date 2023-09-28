@@ -6,7 +6,7 @@ A CSS Library inspired by duck-related colours.
 Made with HTML, CSS, JS and Prismjs.
 
 ## Colour Palette
-![Colour palette](image.png)
+![Colour palette](colour-palette.png)
 
 - Duck: #FEDE00
 - Grass: #0A7029
