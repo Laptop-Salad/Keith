@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Keith Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="downloads/keith.css">
+
+    <!-- Prism JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+    <title>Keith</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div id="logo" class="duck">Keith</div>
+    <h1>Keith</h1>
+    <p>A CSS Library inspired by duck-related colours.</p>
+
+    <section id="downloads">
+        <h2>Downloads</h2>
+
+        <a href="">Download Uncompressed CSS</a>
+        <a href="">Download Uncompressed JS</a>
+    
+        <a href="">Download Minified CSS</a>
+        <a href="">Download Minified JS</a>    
+    </section>
+
+    <section id="colours">
+        <h2>Colour Palette</h2>
+        <div class="duck">Duck</div>
+        <div class="grass">Grass</div>
+        <div class="swamp-water">Swamp Water</div>
+        <div class="duckweed">Duckweed</div>
+    </section>
+
+    <section id="buttons">
+        <h2>Buttons</h2>
+
+        <section id="buttonsSmall" class="inner">
+            <h3>Small</h3>
+
+            <button class="btn sm duck">Duck</button>
+            <button class="btn sm grass">Grass</button>
+            <button class="btn sm swamp-water">Swamp Water</button>
+            <button class="btn sm duckweed">Duckweeed</button>   
+            
+            <pre class="language-html"><code>
+&lt;button class="btn sm duck"&gt;Duck&lt;/button&gt;
+
+&lt;button class="btn sm grass"&gt;Grass&lt;/button&gt;
+
+&lt;button class="btn sm swamp-water"&gt;Swamp Water&lt;/button&gt;
+
+&lt;button class="btn sm duckweed"&gt;Duckweeed&lt;/button&gt;
+            </code></pre>        
+        </section>
+
+        <section id="buttonsMedium" class="inner">
+            <h3>Medium</h3>
+
+            <button class="btn md duck">Duck</button>
+            <button class="btn md grass">Grass</button>
+            <button class="btn md swamp-water">Swamp Water</button>
+            <button class="btn md duckweed">Duckweeed</button>
+            
+            <pre class="language-html"><code>
+&lt;button class=&quot;btn md duck&quot;&gt;Duck&lt;/button&gt;
+
+&lt;button class=&quot;btn md grass&quot;&gt;Grass&lt;/button&gt;
+
+&lt;button class=&quot;btn md swamp-water&quot;&gt;Swamp Water&lt;/button&gt;
+
+&lt;button class=&quot;btn md duckweed&quot;&gt;Duckweeed&lt;/button&gt;
+            </code></pre>        
+                
+        </section>
+
+        <section id="buttonsLarge" class="inner">
+            <h3>Large</h3>
+
+            <button class="btn lg duck">Duck</button>
+            <button class="btn lg grass">Grass</button>
+            <button class="btn lg swamp-water">Swamp Water</button>
+            <button class="btn lg duckweed">Duckweeed</button>    
+
+            <pre class="language-html"><code>
+&lt;button class=&quot;btn lg duck&quot;&gt;Duck&lt;/button&gt;
+
+&lt;button class=&quot;btn lg grass&quot;&gt;Grass&lt;/button&gt;
+
+&lt;button class=&quot;btn lg swamp-water&quot;&gt;Swamp Water&lt;/button&gt;
+
+&lt;button class=&quot;btn lg duckweed&quot;&gt;Duckweed&lt;/button&gt;
+            </code></pre>        
+                
+        </section>
+    </section>
+
+    <section id="progressBars">
+        <h2>Progress Bars</h2>
+
+        <div class="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div style="width: 0%;"></div>
+        </div>
+
+        <div class="progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div style="width: 25%;"></div>
+        </div>
+
+        <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div style="width: 50%"></div>
+        </div>
+
+        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div style="width: 75%"></div>
+        </div>
+
+        <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div style="width: 100%"></div>
+        </div>
+
+        <pre class="language-html"><code>
+&lt;div class&#x3D;&quot;progress&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;0&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;100&quot;&gt;
+    &lt;div style&#x3D;&quot;width: 0%;&quot;&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class&#x3D;&quot;progress&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;25&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;100&quot;&gt;
+    &lt;div style&#x3D;&quot;width: 25%;&quot;&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class&#x3D;&quot;progress&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;50&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;100&quot;&gt;
+    &lt;div style&#x3D;&quot;width: 50%&quot;&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class&#x3D;&quot;progress&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;75&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;100&quot;&gt;
+    &lt;div style&#x3D;&quot;width: 75%&quot;&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class&#x3D;&quot;progress&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;100&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;100&quot;&gt;
+    &lt;div style&#x3D;&quot;width: 100%&quot;&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+        </code></pre>        
+            
+    </section>
+
+    <section id="modals">
+        <h2>Modals</h2>
+
+        <button class="modalBtn btn sm duck" data-for="infoModal">Info</button>
+        
+        <dialog id="infoModal" class="modal">
+            <h3 class="title">Hello</h3>
+            <p>This is a hello world message!</p>
+            <button data-close="true" class="btn md swamp-water">Ok</button>
+        </dialog>
+
+        <pre class="language-html"><code>
+&lt;button class&#x3D;&quot;modalBtn btn sm duck&quot; data-for&#x3D;&quot;infoModal&quot;&gt;Info&lt;&#x2F;button&gt;
+
+&lt;dialog id&#x3D;&quot;infoModal&quot; class&#x3D;&quot;modal&quot;&gt;
+    &lt;h3 class&#x3D;&quot;title&quot;&gt;Hello&lt;&#x2F;h3&gt;
+    &lt;p&gt;This is a hello world message!&lt;&#x2F;p&gt;
+    &lt;button data-close&#x3D;&quot;true&quot; class&#x3D;&quot;btn md swamp-water&quot;&gt;Ok&lt;&#x2F;button&gt;
+&lt;&#x2F;dialog&gt;    
+        </code></pre>        
+            
+    </section>
+
+    <script src="downloads/keith.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+</body>
+</html>
