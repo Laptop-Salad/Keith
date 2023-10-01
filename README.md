@@ -15,5 +15,11 @@ Made with HTML, CSS, JS and Prismjs.
 
 ## Current Components
 - Buttons
+  - Small
+  - Medium
+  - Large
 - Percentage bars
 - Modals
+  - Information
+  - Yes/No
+- Accordions
