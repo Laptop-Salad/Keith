@@ -33,9 +33,6 @@
 
         <a href="https://github.com/Laptop-Salad/Keith/blob/master/downloads/keith.css">Download Uncompressed CSS</a>
         <a href="https://github.com/Laptop-Salad/Keith/blob/master/downloads/keith.js">Download Uncompressed JS</a>
-    
-        <a href="https://github.com/Laptop-Salad/Keith/blob/master/downloads/keith.min.css">Download Minified CSS</a>
-        <a href="https://github.com/Laptop-Salad/Keith/blob/master/downloads/keith.min.js">Download Minified JS</a>    
     </section>
 
     <section id="colours">
@@ -175,10 +172,45 @@
     &lt;p&gt;This is a hello world message!&lt;&#x2F;p&gt;
     &lt;button data-close&#x3D;&quot;true&quot; class&#x3D;&quot;btn md swamp-water&quot;&gt;Ok&lt;&#x2F;button&gt;
 &lt;&#x2F;dialog&gt;    
-        </code></pre>        
+        </code></pre>   
+        
+        <button class="modalBtn btn sm grass" data-for="twoModal">Two Options</button>
+        
+        <dialog id="twoModal" class="modal">
+            <h3 class="title">Hello</h3>
+            <p>This is a hello world message!</p>
+
+            <div>
+                <button data-yes="true" class="btn md swamp-water">Yes</button>
+                <button data-no="true" class="btn md swamp-water">No</button>    
+            </div>
+        </dialog>
+
+        <pre class="language-html"><code>
+&lt;dialog id&#x3D;&quot;twoModal&quot; class&#x3D;&quot;modal&quot;&gt;
+    &lt;h3 class&#x3D;&quot;title&quot;&gt;Hello&lt;&#x2F;h3&gt;
+    &lt;p&gt;This is a hello world message!&lt;&#x2F;p&gt;
+
+    &lt;div&gt;
+        &lt;button data-yes&#x3D;&quot;true&quot; class&#x3D;&quot;btn md swamp-water&quot;&gt;Yes&lt;&#x2F;button&gt;
+        &lt;button data-no&#x3D;&quot;true&quot; class&#x3D;&quot;btn md swamp-water&quot;&gt;No&lt;&#x2F;button&gt;    
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;dialog&gt;
+
+&lt;script&gt;
+    document.getElementById("twoModal").addEventListener("yes", function() {
+        alert("yes");
+    })
+
+    document.getElementById("twoModal").addEventListener("no", function() {
+        alert("no");
+    })
+&lt;&#x2F;script&gt;
+        </code></pre>      
             
     </section>
 
+    <script src="script.js"></script>
     <script src="downloads/keith.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
 </body>
