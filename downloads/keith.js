@@ -27,18 +27,20 @@ function closeModal(modal) {
     modal.style.display = "none";
 }
 
-function rotateAccordion(arrow, content) {
+function rotateAccordion(arrow, content, accordion) {
     if (arrow.classList.contains("arrow-up")) {
         arrow.classList.add("arrow-down");
         arrow.classList.remove("arrow-up");
+        accordion.setAttribute("aria-expanded", "false");
     } else {
         arrow.classList.add("arrow-up");
         arrow.classList.remove("arrow-down");
+        accordion.setAttribute("aria-expanded", "true");
     }
-    
 
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
+
     } else {
         content.style.maxHeight = content.scrollHeight + "px";
     }
@@ -111,8 +113,15 @@ for (let i = 0; i < accordions.length; i++) {
     // Find content
     let content = accordion.getElementsByClassName("content")[0];
 
+    accordion.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            arrowElem.click();
+        }
+    })
+
+
     arrowElem.addEventListener("click", function () {
-        rotateAccordion(arrowImg, content);
+        rotateAccordion(arrowImg, content, accordion);
     });
 
     // Add arrow to header
